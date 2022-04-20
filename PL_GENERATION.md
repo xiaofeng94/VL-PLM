@@ -2,9 +2,10 @@
 
 This document describes how to generate psuedo labels for open vocabulary/zero-shot object detection, which is introduced in the paper [Exploiting unlabeled data with vision and language models for object detection]().
 
-**Prerequsite**: Download the [COCO dataset ](https://cocodataset.org/#home), and put it in the `datasets/` directory. 
-Download the pretrained two-stage class agnostic proposal generator [weight]() and put it as `./tools/mask_rcnn_R_50_FPN_1x_base_num1.pth`.
-
+**Prerequsite**: 
+- Download the [COCO dataset](https://cocodataset.org/#home), and put it in the `datasets/` directory. 
+- Download the pretrained class agnostic proposal generator [weight](https://drive.google.com/file/d/1ZDPrPGd5eyR62BZhjpHdZdOYPePVfPeO/view?usp=sharing) and put it as `./tools/mask_rcnn_R_50_FPN_1x_base_num1.pth`.
+- Install [Pytorch]()(>=1.7), [Detectron2](), [CLIP](https://github.com/openai/CLIP), [COCO API](https://github.com/cocodataset/cocoapi), OpenCV, and tqdm.
 
 ## Evaluate PLs on COCO Validation Set
 
@@ -25,7 +26,34 @@ python gen_PLs.py '../configs/mask_rcnn_R_50_FPN_1x_base_num1.yaml' './mask_rcnn
 python offline_eval_onCOCO.py ./inst_val2017_novel.json ./test_PL.json
 ```
 You may see the result as follows
-
+```
+Total PL boxes num: 10033, avg num: 4.95
+loading annotations into memory...
+Done (t=0.05s)
+creating index...
+index created!
+Loading and preparing results...
+DONE (t=0.09s)
+creating index...
+index created!
+Running per image evaluation...
+Evaluate annotation type *bbox*
+DONE (t=4.02s).
+Accumulating evaluation results...
+DONE (t=0.66s).
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.156
+ Average Precision  (AP) @[ IoU=0.50      | area=   all | maxDets=100 ] = 0.255
+ Average Precision  (AP) @[ IoU=0.75      | area=   all | maxDets=100 ] = 0.160
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.103
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.193
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.212
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=  1 ] = 0.162
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets= 10 ] = 0.291
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.297
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.138
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.328
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.427
+ ```
 
 **Step 4 (optional)**: add text embedding into the json file for the evaluation of open vocabulary detectors. 
 The postfix `_txtEmb` will be added in the input file name and results in the final file `test_PL_txtEmb.json`.
