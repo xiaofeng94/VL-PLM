@@ -35,6 +35,8 @@ datasets/
         
 ```
 
+**Note**: You may generate and evaluate pseudo labels on your own by following [the guide](https://github.com/xiaofeng94/VL-PLM_for_detection/blob/main/PL_GENERATION.md)
+
 
 ## Evaluation with pre-trained models
 Mask R-CNN:
