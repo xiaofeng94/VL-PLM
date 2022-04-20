@@ -58,15 +58,15 @@ if __name__ == '__main__':
 
     lamda = args.lamda                      # CLIP weight = 1 - lamda
     thres = args.thres
-    pre_class_iou_thres = args.nms_thres    # 0.3 may be better
+    pre_class_iou_thres = args.nms_thres
 
-    orig_COCOJson_file = args.gt_json       # '../datasets/coco/annotations/inst_val_17novel_novelOnly.1@10.json'
+    orig_COCOJson_file = args.gt_json
     coco_root = args.coco_root
-    save_json_file = args.pl_save_file      # './test_RPN_CLIP_scores_direct.json'
+    save_json_file = args.pl_save_file
 
     # proposal network config & weights
-    config_file = args.RPN_config           # '../CLIP_test/PL_playground/mask_rcnn_R_50_FPN_1x_base_num1.yaml'
-    weight_file = args.RPN_weight_file      # '../CLIP_test/PL_playground/mask_rcnn_R_50_FPN_1x_base_num1.pth'
+    config_file = args.RPN_config
+    weight_file = args.RPN_weight_file
 
     # novel categories
     usedCatNames = novelCatNames

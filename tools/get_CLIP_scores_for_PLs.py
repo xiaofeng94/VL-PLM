@@ -59,15 +59,15 @@ if __name__ == '__main__':
     img_end_idx = args.end
 
     # coco json
-    orig_COCOJson_file = args.gt_json       # '../datasets/coco/annotations/inst_val_17novel_novelOnly.1@10.json'
+    orig_COCOJson_file = args.gt_json
     coco_root = args.coco_root
     # save results in the folder <rec_save_root> as the name <rec_json_name>
-    rec_save_root = args.save_dir          # './test_RPN_CLIP_scores'
+    rec_save_root = args.save_dir
     rec_json_name = 'CLIP_scores'
 
     # proposal network config & weights
-    config_file = args.RPN_config           # '../CLIP_test/PL_playground/mask_rcnn_R_50_FPN_1x_base_num1.yaml'
-    weight_file = args.RPN_weight_file      # '../CLIP_test/PL_playground/mask_rcnn_R_50_FPN_1x_base_num1.pth'
+    config_file = args.RPN_config
+    weight_file = args.RPN_weight_file
 
     # novel categories
     usedCatNames = novelCatNames

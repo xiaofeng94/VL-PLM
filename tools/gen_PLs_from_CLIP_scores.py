@@ -25,9 +25,9 @@ if __name__ == '__main__':
     args = parser.parse_args()
 
     ###################################p
-    orig_json_file = args.gt_json           # '../datasets/coco/annotations/inst_val_17novel_novelOnly.1@10.json'
-    rec_json_dir = args.clip_score_dir      # './test_RPN_CLIP_scores'
-    save_json_file = args.pl_save_file      # './test_RPN_CLIP_scores.json'
+    orig_json_file = args.gt_json
+    rec_json_dir = args.clip_score_dir
+    save_json_file = args.pl_save_file
 
     mean_thres = args.thres
     lamda = args.lamda

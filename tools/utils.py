@@ -175,13 +175,14 @@ multiple_templates = [
     'a painting of a {}.',
 ]
 
-def build_text_embedding(model, categories, templates, add_this_is=False):
+def build_text_embedding(model, categories, templates, add_this_is=False, show_process=True):
     run_on_gpu = torch.cuda.is_available()
 
     with torch.no_grad():
         all_text_embeddings = []
-        print('Building text embeddings...')
-        for catName in tqdm(categories):
+        if show_process:
+            print('Building text embeddings...')
+        for catName in (tqdm(categories) if show_process else categories):
             texts = [template.format(catName, article=article(catName)) for template in templates]
             if add_this_is:
                 texts = ['This is ' + text if text.startswith('a') or text.startswith('the') else text

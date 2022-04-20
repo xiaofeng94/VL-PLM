@@ -13,8 +13,8 @@ if __name__ == '__main__':
     # print(args)
 
     #############################################
-    gt_COCOJson_file = args.gt_json       # '/research/cbim/vast/sz553/datasets/coco_2017/annotations/inst_val_17novel_novelOnly.1@10.json'
-    pred_COCOJson_file = args.pl_json     # './to_github/test_RPN_CLIP_scores.json'
+    gt_COCOJson_file = args.gt_json
+    pred_COCOJson_file = args.pl_json   
     #############################################
 
     PLData = json.load(open(pred_COCOJson_file, 'r'))

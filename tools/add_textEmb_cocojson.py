@@ -1,4 +1,7 @@
+import argparse
 import json
+
+from tqdm import tqdm, trange
 
 import numpy as np
 import torch
@@ -14,7 +17,7 @@ if __name__ == '__main__':
     args = parser.parse_args()
 
     #######################
-    orig_json_file = args.coco_json_file    # '/research/cbim/vast/sz553/datasets/coco_2017/annotations/inst_train2017_basePL_RoIx1_t05.json'
+    orig_json_file = args.coco_json_file
 
     #######################
 
@@ -33,11 +36,11 @@ if __name__ == '__main__':
 
     print('wiriting text embedding')
     # text embedding with prompt engineering
-    for clsDict in data['categories']:
+    for clsDict in tqdm(data['categories']):
         clsName = clsDict['name']
         clsName = clsName.replace('_', ' ')
 
-        text_embed = build_text_embedding(CLIPModel, [clsName], multiple_templates)
+        text_embed = build_text_embedding(CLIPModel, [clsName], multiple_templates, show_process=False)
         clsDict['text_emb'] = text_embed[0].cpu().numpy().tolist()
 
     print('saving %s' % save_json_file)
