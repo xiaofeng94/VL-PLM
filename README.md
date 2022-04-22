@@ -74,6 +74,8 @@ python -m train_net.py --config configs/coco_openvoc_LSJ.yaml  --num-gpus=1 --ev
 ```
 
 ## Training
+The best model on COCO in the paper is trained with large scale Jitter (LSJ), but training with LSJ requires too many GPU memories. Thus, beside the LSJ version, we also provide training without LSJ. 
+
 Training Mask R-CNN with Large Scale Jitter (LSJ).
 ```bash 
 python train_net.py --config configs/coco_openvoc_LSJ.yaml  --num-gpus=8 --use_lsj
