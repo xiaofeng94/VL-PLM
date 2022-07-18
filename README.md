@@ -1,8 +1,8 @@
 # Exploiting Unlabeled Data with Vision and Language Models for Object Detection
 
-Official implementation of [Exploiting unlabeled data with vision and language models for object detection]().
+Official implementation of Exploiting unlabeled data with vision and language models for object detection.
 
-[Project]()
+[arXiv](soon), [Project](https://www.nec-labs.com/~mas/VL-PLM/)
 
 ## Installation
 
