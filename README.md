@@ -2,7 +2,7 @@
 
 Official implementation of Exploiting unlabeled data with vision and language models for object detection.
 
-[arXiv](soon), [Project](https://www.nec-labs.com/~mas/VL-PLM/)
+[arXiv](https://arxiv.org/abs/2207.08954), [Project](https://www.nec-labs.com/~mas/VL-PLM/)
 
 ## Installation
 
