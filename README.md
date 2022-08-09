@@ -10,8 +10,9 @@ Our project is developed on [Detectron2](https://github.com/facebookresearch/det
 Please follow the official installation [instructions](https://github.com/facebookresearch/detectron2/blob/main/INSTALL.md).
 
 ## Data Preparation
-Download the dataset from [COCO](https://cocodataset.org/#home), and put it in the `datasets/` directory.
-Download our pre-generated pseudo-labeled data from [here](https://drive.google.com/drive/folders/1TnoMobCYmjcI_eOPBOJpZZw39tUK6dDx?usp=sharing).
+Download the [COCO dataset](https://cocodataset.org/#home), and put it in the `datasets/` directory.
+
+Download our [pre-generated pseudo-labeled data](https://drive.google.com/drive/folders/1TnoMobCYmjcI_eOPBOJpZZw39tUK6dDx?usp=sharing), and put them in the `datasets/open_voc` directory.
 
 Dataset are organized in the following way:
 ```bazaar
@@ -35,7 +36,7 @@ datasets/
         
 ```
 
-**Note**: You may generate and evaluate pseudo labels on your own by following [the guide](https://github.com/xiaofeng94/VL-PLM_for_detection/blob/main/PL_GENERATION.md)
+**Note**: You may generate and evaluate pseudo labels on your own by following our [pseudo label generation instruction](https://github.com/xiaofeng94/VL-PLM_for_detection/blob/main/PL_GENERATION.md)
 
 
 ## Evaluation with pre-trained models
