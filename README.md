@@ -36,7 +36,8 @@ datasets/
         
 ```
 
-**Note**: You may generate and evaluate pseudo labels on your own by following our [pseudo label generation instruction](https://github.com/xiaofeng94/VL-PLM_for_detection/blob/main/PL_GENERATION.md)
+## Pseudo label generation
+If you want to generate and evaluate pseudo labels on your own, please follow our [pseudo label generation instruction](https://github.com/xiaofeng94/VL-PLM_for_detection/blob/main/PL_GENERATION.md)
 
 
 ## Evaluation with pre-trained models
