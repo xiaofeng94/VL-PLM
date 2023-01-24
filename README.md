@@ -89,7 +89,14 @@ python train_net.py --config configs/coco_openvoc_mask_rcnn.yaml  --num-gpus=8
 ## Citing VL-PLM
 If you use VL-PLM in your work or wish to refer to the results published in this repo, please cite our paper:
 ```BibTeX
-
+@inproceedings{zhao2022exploiting,
+  title={Exploiting unlabeled data with vision and language models for object detection},
+  author={Zhao, Shiyu and Zhang, Zhixing and Schulter, Samuel and Zhao, Long and Vijay Kumar, BG and Stathopoulos, Anastasis and Chandraker, Manmohan and Metaxas, Dimitris N},
+  booktitle={ECCV},
+  pages={159--175},
+  year={2022},
+  organization={Springer}
+}
 ```
 
 
