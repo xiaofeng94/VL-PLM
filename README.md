@@ -4,6 +4,9 @@ Official implementation of Exploiting unlabeled data with vision and language mo
 
 [arXiv](https://arxiv.org/abs/2207.08954), [Project](https://www.nec-labs.com/~mas/VL-PLM/)
 
+## News
+- **`12/29/2023`**: Please check ou improved the pseudo labeling with self-training and a split-and-fusion head ([paper](https://arxiv.org/abs/2308.06412) and [code](https://github.com/xiaofeng94/SAS-Det)).
+
 ## Installation
 
 Our project is developed on [Detectron2](https://github.com/facebookresearch/detectron2).
