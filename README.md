@@ -15,7 +15,7 @@ Please follow the official installation [instructions](https://github.com/facebo
 ## Data Preparation
 Download the [COCO dataset](https://cocodataset.org/#home), and put it in the `datasets/` directory.
 
-Download our [pre-generated pseudo-labeled data](https://drive.google.com/drive/folders/1TnoMobCYmjcI_eOPBOJpZZw39tUK6dDx?usp=sharing), and put them in the `datasets/open_voc` directory.
+Download our [pre-generated pseudo-labeled data](https://drive.google.com/drive/folders/1hv9YZF0mGUQVCmDgEzGxYi9FtqIukNBd?usp=drive_link), and put them in the `datasets/open_voc` directory.
 
 Dataset are organized in the following way:
 ```bazaar
@@ -59,18 +59,16 @@ Mask R-CNN:
 <td align="center">34.4</td>
 <td align="center">60.2</td>
 <td align="center">53.5</td>
-
-<td align="center"><a href="https://drive.google.com/file/d/18rFQNCvGuJl47onXXZAy1ZaYroctAmEz/view?usp=sharing">model</a></td>
+<td align="center"><a href="https://drive.google.com/file/d/1bk0yrHdPe-gaO0goDDLmHY0KAOy7fR_y/view?usp=drive_link">model</a></td>
 </tr>
+    
 <!-- ROW: with out LSJ -->
  <tr><td align="left"><a href="./configs/coco_openvoc_mask_rcnn.yaml">W/O LSJ</a></td>
 <td align="center">32.3</td>
 <td align="center">54.0</td>
 <td align="center">48.3</td>
-
-<td align="center"><a href="https://drive.google.com/file/d/1aqc6tqE14TCMtGk9qafg3aFVAXR-tDvr/view?usp=sharing">model</a></td>
+<td align="center"><a href="https://drive.google.com/file/d/1yaYqWeXzSMDAdCgbKxyTpmu45uv_Xsu-/view?usp=drive_link">model</a></td>
 </tr>
-
 
 </tbody></table>
 
