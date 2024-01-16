@@ -4,7 +4,7 @@ This document describes how to generate psuedo labels for open vocabulary/zero-s
 
 **Prerequsite**: 
 - Download the [COCO dataset](https://cocodataset.org/#home), and put it in the `datasets/` directory. 
-- Download the pretrained class agnostic proposal generator [weight](https://drive.google.com/file/d/1ZDPrPGd5eyR62BZhjpHdZdOYPePVfPeO/view?usp=sharing) and put it as `./tools/mask_rcnn_R_50_FPN_1x_base_num1.pth`.
+- Download the pretrained class agnostic proposal generator [weight](https://drive.google.com/file/d/18CJMLiitP6pPY9cTTlhnBCdAj0cmF5T7/view?usp=drive_link) and put it as `./tools/mask_rcnn_R_50_FPN_1x_base_num1.pth`.
 - Install [Pytorch]()(>=1.7), [Detectron2](), [CLIP](https://github.com/openai/CLIP), [COCO API](https://github.com/cocodataset/cocoapi), OpenCV, and tqdm.
 
 ## Evaluate PLs on COCO Validation Set
